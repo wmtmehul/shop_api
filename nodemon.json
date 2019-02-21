@@ -1,6 +1,0 @@
-{
-    "env": {
-        "MONGO_PW": "mehul",
-        "JWT_KEY": "secret"
-    }
-} 

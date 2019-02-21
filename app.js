@@ -8,7 +8,7 @@ const userRouter = require('./routes/user')
 
 mongoose.connect('mongodb://root:'+process.env.MONGO_PW+'@cluster0-shard-00-00-bnajz.mongodb.net:27017,cluster0-shard-00-01-bnajz.mongodb.net:27017,cluster0-shard-00-02-bnajz.mongodb.net:27017/shop?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true');
 //mongoose.connect('mongodb://localhost:27017/shopping');
-
+console.log(process.env.MONGO_PW);
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use('/uploads', express.static('uploads'))
